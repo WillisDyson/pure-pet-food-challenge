@@ -7,7 +7,7 @@ const StyledSignupBtn = styled.a`
 
 const SignUpBtn = () => {
     return (
-        <StyledSignupBtn>Test</StyledSignupBtn>
+        <h1>test</h1>
     );
 }
 

@@ -1,10 +1,13 @@
-import './App.css';
 import SignUpForm from './components/sign-up-form/SignUpForm';
+import { ApiProvider } from './context/ApiContext';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <SignUpForm />
+      <ApiProvider>
+        <SignUpForm />
+      </ApiProvider>
     </div>
   );
 }
