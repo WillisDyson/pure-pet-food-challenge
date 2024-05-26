@@ -1,13 +1,12 @@
-import { useState } from 'react';
 import styled from 'styled-components';
 const StyledSignupBtn = styled.a`
     border: solid 1px #ffffff;
     color: #ffffff;
 `;
 
-const SignUpBtn = () => {
+const SignUpBtn = ({ type }) => {
     return (
-        <h1>test</h1>
+        <StyledSignupBtn>Sign up for {type} days</StyledSignupBtn>
     );
 }
 

@@ -3,7 +3,9 @@ import { createContext, useContext, useState, useEffect } from 'react';
 const ApiContext = createContext();
 
 export const ApiProvider = ({ children }) => {
-    const [apiData, setApiData] = useState();
+
+    const [apiData, setApiData] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     const handleApiDataFetch = async () => {
         try {
@@ -13,9 +15,11 @@ export const ApiProvider = ({ children }) => {
             }
             const data = await returnedApiData.json();
             setApiData(data);
-            console.log(data);
+            console.log('API data fetch successful');
         } catch (error) {
             console.error('Error fetching data:', error.message);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -24,7 +28,7 @@ export const ApiProvider = ({ children }) => {
     }, []);
 
     return (
-        <ApiContext.Provider value={{ apiData, handleApiDataFetch }}>
+        <ApiContext.Provider value={{ apiData, loading }}>
             {children}
         </ApiContext.Provider>
     );
