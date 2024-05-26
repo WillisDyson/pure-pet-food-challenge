@@ -1,4 +1,5 @@
 import { useApi } from '../../context/ApiContext';
+import { useClickedBtn } from '../../context/ClickedBtnContext';
 import styled from 'styled-components';
 import SignUpBtn from './sign-up-btn/SignUpBtn';
 
@@ -21,10 +22,16 @@ const SignUpBtnsWrap = styled.div`
 
 const SignUpForm = () => {
     const { apiData, loading } = useApi();
+    const { setClickedBtn } = useClickedBtn();
 
     if (loading) {
         return <div>Loading, waiting for API data.</div>;
     }
+
+    const handleClick = (e) => {
+        const clickedBtnVariant = e.target.getAttribute('data-variant');
+        setClickedBtn(clickedBtnVariant);
+    };
 
     return (
         <SignUpFormOuter>
@@ -33,7 +40,8 @@ const SignUpForm = () => {
                     <SignUpBtn
                         key={index}
                         duration={key}
-                        variant={index === 0 ? 'secondary' : undefined} />
+                        variant={key}
+                        onclick={handleClick} />
                 ))}
             </SignUpBtnsWrap>
         </SignUpFormOuter>
