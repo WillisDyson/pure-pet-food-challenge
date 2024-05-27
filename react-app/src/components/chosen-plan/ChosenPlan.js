@@ -1,6 +1,6 @@
 import { ChosenPlanOuter, ChosenPlanWrap } from './ChosenPlan.styled';
 import TransitionPack from './transition-pack/TransitionPack';
-import InterSectionImage from './inter-section-image/InterSectionImage';
+import InterSectionImage from './inter-section-image/InterSection';
 import OngoingPlan from './ongoing-plan/OngoingPlan';
 
 
