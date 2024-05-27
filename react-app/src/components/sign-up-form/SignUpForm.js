@@ -20,16 +20,33 @@ const SignUpBtnsWrap = styled.div`
     }
 `;
 
+const InfoMessage = styled.div`
+    color: #000000;
+    font-size: 2rem;
+    margin-top: 40px;
+`
+
+const ErrorMessage = styled.div`
+    color: #e90000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 40px;
+`
+
 const SignUpForm = () => {
-    const { apiData, loading } = useApi();
+    const { apiData, loading, apiError } = useApi();
     const { setClickedBtn } = useClickedBtn();
 
     if (loading) {
-        return <div>Loading, waiting for API data.</div>;
+        return <InfoMessage>Loading, waiting for API data.</InfoMessage>;
+    }
+
+    if (apiError) {
+        return <ErrorMessage>Error, unable to fetch API data. Did you forget to run the API?</ErrorMessage>;;
     }
 
     const handleClick = (e) => {
-        const clickedBtnVariant = e.target.getAttribute('data-variant');
+        const clickedBtnVariant = e.target.getAttribute('data-plan');
         setClickedBtn(clickedBtnVariant);
     };
 
@@ -40,7 +57,7 @@ const SignUpForm = () => {
                     <SignUpBtn
                         key={index}
                         duration={key}
-                        variant={key}
+                        variant={index === 0 ? 'secondary' : undefined}
                         onclick={handleClick} />
                 ))}
             </SignUpBtnsWrap>

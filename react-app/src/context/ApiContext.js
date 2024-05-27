@@ -6,6 +6,7 @@ export const ApiProvider = ({ children }) => {
 
     const [apiData, setApiData] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [apiError, setApiError] = useState(false);
 
     const handleApiDataFetch = async () => {
         try {
@@ -16,9 +17,10 @@ export const ApiProvider = ({ children }) => {
             const data = await returnedApiData.json();
             setApiData(data);
             console.log('API data fetch successful');
+            setLoading(false);
         } catch (error) {
             console.error('Error fetching data:', error.message);
-        } finally {
+            setApiError(true);
             setLoading(false);
         }
     };
@@ -28,7 +30,7 @@ export const ApiProvider = ({ children }) => {
     }, []);
 
     return (
-        <ApiContext.Provider value={{ apiData, loading }}>
+        <ApiContext.Provider value={{ apiData, loading, apiError }}>
             {children}
         </ApiContext.Provider>
     );
