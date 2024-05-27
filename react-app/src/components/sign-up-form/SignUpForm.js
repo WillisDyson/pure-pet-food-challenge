@@ -42,7 +42,7 @@ const SignUpForm = () => {
     }
 
     if (apiError) {
-        return <ErrorMessage>Error, unable to fetch API data. Did you forget to run the API?</ErrorMessage>;;
+        return <ErrorMessage>Error, unable to fetch API data. Did you forget to start the API?</ErrorMessage>;;
     }
 
     const handleClick = (e) => {
