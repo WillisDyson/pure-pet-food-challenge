@@ -1,9 +1,21 @@
-import styled from 'styled-components';
+import { ChosenPlanOuter, ChosenPlanWrap } from './ChosenPlan.styled';
+import TransitionPack from './transition-pack/TransitionPack';
+import InterSectionImage from './inter-section-image/InterSectionImage';
+import OngoingPlan from './ongoing-plan/OngoingPlan';
+
+
 
 const ChosenPlan = ({ plan }) => {
 
+
     return (
-        <h1>{plan}</h1>
+        <ChosenPlanOuter>
+            <ChosenPlanWrap>
+                <TransitionPack plan={plan} />
+                <InterSectionImage />
+                <OngoingPlan plan={plan} />
+            </ChosenPlanWrap>
+        </ChosenPlanOuter>
     )
 }
 

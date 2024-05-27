@@ -16,3 +16,16 @@ export const SignUpBtnsWrap = styled.div`
         flex-direction: column;
     }
 `;
+
+export const InfoMessage = styled.div`
+    color: #000000;
+    font-size: 2rem;
+    margin-top: 40px;
+`
+
+export const ErrorMessage = styled.div`
+    color: #e90000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 40px;
+`

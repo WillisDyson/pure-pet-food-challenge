@@ -1,10 +1,10 @@
-/* Using http-proxy-middleware npm package to fix issues involving CORS */
+/* Using http-proxy-middleware npm package to get around Cross-Origin Resource Sharing (CORS) policy without modifying the API */
 
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function (app) {
     app.use(
-        '/api',
+        '/api', // Looks for any requests starting with '/api'
         createProxyMiddleware({
             target: 'http://localhost:5000',
             changeOrigin: true,

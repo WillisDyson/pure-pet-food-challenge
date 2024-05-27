@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const StyledSignUpBtn = styled(Link)`
+const SignUpBtnLink = styled(Link)`
     background-color: #f2a900;
     border-radius: 5px;
     color: #274c46;
@@ -31,4 +31,4 @@ const StyledSignUpBtn = styled(Link)`
     `}
 `;
 
-export default StyledSignUpBtn;
+export default SignUpBtnLink;
