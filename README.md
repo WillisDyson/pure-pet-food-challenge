@@ -11,7 +11,7 @@ TBD
 - **Loading and error messages**: Although this was only a test project, I still incorporated "loading" and "error" messages to hopefully share my understanding of how these concepts work.
 - **Transition pack**: I may have been misunderstanding how the "12 day transition pack" was meant to work in regards to the API data, therefore I kept the "12 days" part to be non-dynamic on purpose.#
 - **Styling choices**: On the buttons page, I tried to mimick the general styling (background colour + button colour) of the Pure website. On the next page, I tried to mimick the design as closely as possible, although there were some minor inconsistencies with how the fonts looked compared to the design, etc.
-- **Accessibility and responsiveness**: I purposefully left the arrow image "alt" attribute empty, which means the image is hidden from non-visual users who use the app via the accessibility DOM. I deemed the arrow not to be necessary, as it doesn't provide any extra context (the "THEN" label does the explaining).
+- **Accessibility and responsiveness**: I purposefully left the arrow image "alt" attribute empty, which means the image is hidden from non-visual users who use the app via the accessibility DOM. I deemed the arrow not to be necessary, as it doesn't provide any extra context (the "THEN" label does the explaining). I used @media queries to make the element responsive, although not much adjustment was needed.
 
 ## Retrospective and improvements for next time
 - **CSS-in-JS component naming**: I feel that my naming of CSS-in-JS components was inconsistent and didn't follow a particular naming convention. Next time, I would ensure more consistent naming (similar to BEM).
@@ -23,4 +23,4 @@ TBD
 - Make sure the React App is running on port 3000
 - Make sure the API is running on port 5000
 
-## Please reach out if you have any questions!
+## Please reach out if you have any issues or questions!
