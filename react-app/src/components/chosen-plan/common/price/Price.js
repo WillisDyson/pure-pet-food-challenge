@@ -1,11 +1,9 @@
 import PriceStyled from "./Price.styled";
 
-const Price = ({ price, discount }) => {
-    const discountToDecimal = (100 - parseFloat(discount)) / 100;
-    const priceAfterDiscount = Math.floor(parseFloat(price) * discountToDecimal * 100) / 100;
+const Price = ({ price, variant }) => {
 
     return (
-        <PriceStyled>£{priceAfterDiscount.toFixed(2)}</PriceStyled>
+        <PriceStyled variant={variant}>£{price}</PriceStyled>
     )
 }
 

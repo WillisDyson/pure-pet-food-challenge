@@ -1,7 +1,15 @@
-const OngoingPlan = () => {
+import Section from '../common/section/Section';
+import OngoingPlanInner from './ongoing-plan-inner/OngoingPlanInner';
+import OngoingPlanDetails from './ongoing-plan-details/OngoingPlanDetails';
+
+const TransitionPack = ({ plan }) => {
+
     return (
-        <p>Ongoing plan</p>
+        <Section variant="ongoing-plan">
+            <OngoingPlanInner />
+            <OngoingPlanDetails plan={plan} />
+        </ Section>
     );
 }
 
-export default OngoingPlan;
+export default TransitionPack;
