@@ -1,3 +1,5 @@
+// Some global styles to simulate those on the Pure website
+
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`

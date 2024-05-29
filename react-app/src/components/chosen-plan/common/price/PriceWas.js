@@ -1,5 +1,7 @@
 import PriceWasStyled from "./PriceWas.styled";
 
+// Common priceWas component to be reused (not reused in this instance)
+
 const PriceWas = ({ price }) => {
     const priceToNumber = parseFloat(price);
 

@@ -27,8 +27,8 @@ const SignUpForm = () => {
                     <SignUpBtn
                         key={index}
                         duration={key}
-                        variant={index === 0 ? 'secondary' : undefined}
-                        onclick={handleClick} />
+                        variant={index === 0 ? 'secondary' : undefined}  // Always makes the first button have "secondary" styling
+                        onclick={handleClick} /> // handeClick() function passed in as props, then set as an onCLick attribute inside <SignUpBtn/>
                 ))}
             </SignUpBtnsWrap>
         </SignUpFormOuter>

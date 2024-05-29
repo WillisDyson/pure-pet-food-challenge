@@ -1,7 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 
 const ApiContext = createContext();
-
 export const ApiProvider = ({ children }) => {
 
     const [apiData, setApiData] = useState(null);
@@ -30,6 +29,7 @@ export const ApiProvider = ({ children }) => {
     }, []);
 
     return (
+        // API data, as well as current loading/error state, is passed in through context provider so it is available globally
         <ApiContext.Provider value={{ apiData, loading, apiError }}>
             {children}
         </ApiContext.Provider>

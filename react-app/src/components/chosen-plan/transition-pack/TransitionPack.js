@@ -11,7 +11,7 @@ const TransitionPack = ({ plan }) => {
     const price = apiData.data[plan]?.price;
     const discount = apiData.data[plan]?.discount;
     const discountToDecimal = (100 - parseFloat(discount)) / 100;
-    const priceWithDiscount = (Math.floor(price * discountToDecimal * 100) / 100).toFixed(2);
+    const priceWithDiscount = (Math.floor(price * discountToDecimal * 100) / 100).toFixed(2); // Calculates daily price to two decimal places, then rounds down
 
     return (
         <Section variant="transition-pack">
