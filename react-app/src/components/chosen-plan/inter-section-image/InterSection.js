@@ -1,4 +1,4 @@
-import downArrow from '../../../assets/fancy-arrow--down.png';
+import downArrow from 'src/assets/fancy-arrow--down.png';
 import { InterSectionImageWrap, InterSectionArrowImg, InterSectionLabel } from './InterSection.styled';
 
 const InterSectionImage = () => {

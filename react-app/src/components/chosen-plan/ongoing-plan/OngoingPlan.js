@@ -1,4 +1,4 @@
-import Section from '../common/section/Section';
+import Section from 'src/common/section/Section';
 import OngoingPlanInner from './ongoing-plan-inner/OngoingPlanInner';
 import OngoingPlanDetails from './ongoing-plan-details/OngoingPlanDetails';
 

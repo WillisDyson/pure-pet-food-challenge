@@ -1,7 +1,6 @@
-import { useApi } from '../../context/ApiContext';
-import { useClickedBtn } from '../../context/ClickedBtnContext';
+import { useApi } from 'src/context/ApiContext';
+import { useClickedBtn } from 'src/context/ClickedBtnContext';
 import { InfoMessage, ErrorMessage, SignUpFormOuter, SignUpBtnsWrap } from './SignUpForm.styled';
-import styled from 'styled-components';
 import SignUpBtn from './sign-up-btn/SignUpBtn';
 
 const SignUpForm = () => {
