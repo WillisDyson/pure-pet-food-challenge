@@ -12,13 +12,13 @@ TBD
 - **Transition pack**: I may have been misunderstanding how the "12 day transition pack" was meant to work in regards to the API data, therefore I kept the "12 days" part to be non-dynamic on purpose.#
 - **Styling choices**: On the buttons page, I tried to mimick the general styling (background colour + button colour) of the Pure website. On the next page, I tried to mimick the design as closely as possible, although there were some minor inconsistencies with how the fonts looked compared to the design, etc.
 - **Accessibility and responsiveness**: I purposefully left the arrow image "alt" attribute empty, which means the image is hidden from non-visual users who use the app via the accessibility DOM. I deemed the arrow not to be necessary, as it doesn't provide any extra context (the "THEN" label does the explaining). I used @media queries to make the element responsive, although not much adjustment was needed.
+- **Absolute imports**: I set up absolute file imports using jsconfig.json to avoid having to use '../../../../', as well as improving scaleability.
 
-## Retrospective and improvements for next time
-- **CSS-in-JS component naming**: I feel that my naming of CSS-in-JS components was inconsistent and didn't follow a particular naming convention. Next time, I would ensure more consistent naming (similar to BEM).
-- **File directory and references**: Many of my imports referenced file locations like "../../../SignUpForm.js". In retrospect, I should have done something else – I understand that a much easier solution can be achieved through the use of TypeScript, which I aim to explore very soon.
+## Retrospective
+- **CSS-in-JS component naming**: In retorspect, I feel that my naming of CSS-in-JS components was inconsistent and didn't follow a particular naming convention.
 - **Component structure**: I tried to be vigilant with structuring components and subcomponents, however I realise in some cases I didn't get the folder structure right – for example, the "inter-section image" could have arguably come inside the "common" folder, if it was an element that was meant to be reused. The "MORE" label should probably have been set up as a separate "common" component too, with the text added dynamically like the VoucherLabel.js component.
 
-## Having trouble running?
+## Having trouble running? Some things to try:
 - Be sure to run "npm install" and "npm install express" first
 - Make sure the React App is running on port 3000
 - Make sure the API is running on port 5000
