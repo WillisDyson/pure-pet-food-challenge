@@ -1,9 +1,13 @@
-﻿### pure-interview-task
+﻿# pure-interview-task
 ## Project overview
 A task as part of my interview process for Pure Pet Food, where I had to build a React SPA with two modular buttons that are dynamically populated by data fetched from a local API. New dynamic content must render depending on which button has been clicked. The task was quite challenging at first with a few hurdles to get past, but I really enjoyed testing my skills and dipping my toes into a couple of new areas.
 
 ## Screenshots of finished project
-TBD
+### Sign up page
+![Image of the "sign up" page](https://willisdyson.co.uk/images/ppf-main.png)
+
+### Chosen plan page
+![Image of the "chosen plan" page](https://willisdyson.co.uk/images/ppf-sub.png)
 
 ## Decisions explained
 - **Middleware proxy usage**: After having lots of problems getting around the Cross-Origin Resource Sharing policy due to the use of a local API, I used the _http-proxy-middleware_ npm package to create a proxy for fetch requests to the API. 
