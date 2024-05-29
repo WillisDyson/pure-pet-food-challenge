@@ -1,5 +1,5 @@
-import { useApi } from 'src/context/ApiContext';
-import Price from 'src/common/price/Price';
+import { useApi } from 'context/ApiContext';
+import Price from 'components/chosen-plan/common/price/Price';
 import OngoingPlanPricePerDayWrap from './OngoingPlanPricePerDay.styled';
 
 const OngoingPlanPricePerDay = ({ plan }) => {

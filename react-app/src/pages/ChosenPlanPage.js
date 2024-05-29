@@ -1,6 +1,5 @@
-import { useEffect } from "react";
-import ChosenPlan from "src/components/chosen-plan/ChosenPlan";
-import { useClickedBtn } from 'src/context/ClickedBtnContext';
+import ChosenPlan from "components/chosen-plan/ChosenPlan";
+import { useClickedBtn } from 'context/ClickedBtnContext';
 
 const ChosenPlanPage = () => {
     const { clickedBtn } = useClickedBtn();

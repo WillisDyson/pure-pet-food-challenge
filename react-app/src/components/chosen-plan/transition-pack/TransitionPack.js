@@ -1,9 +1,9 @@
-import { useApi } from 'src/context/ApiContext';
-import Section from 'src/common/section/Section';
+import { useApi } from 'context/ApiContext';
+import Section from 'components/chosen-plan/common/section/Section';
 import TransitionPackText from './transition-pack-text/TransitionPackText';
-import Price from 'src/common/price/Price';
-import PriceWas from 'src/common/price/PriceWas';
-import VoucherTag from 'src/common/voucher-tag/VoucherTag';
+import Price from 'components/chosen-plan/common/price/Price';
+import PriceWas from 'components/chosen-plan/common/price/PriceWas';
+import VoucherTag from 'components/chosen-plan/common/voucher-tag/VoucherTag';
 
 const TransitionPack = ({ plan }) => {
 
