@@ -1,6 +1,6 @@
-﻿# pure-interview-task
+﻿# pure-pet-food-challenge
 ## Project overview
-A task as part of my interview process for Pure Pet Food, where I had to build a React SPA with two modular buttons that are dynamically populated by data fetched from a local API. New dynamic content must render depending on which button has been clicked. The task was quite challenging at first with a few hurdles to get past, but I really enjoyed testing my skills and dipping my toes into a couple of new areas.
+A coding challenge by Pure Pet Food, where I had to build a React SPA with two modular buttons that are dynamically populated by data fetched from a local API. New dynamic content must render depending on which button has been clicked. The task was quite challenging at first with a few hurdles to get past, but I really enjoyed testing my skills and dipping my toes into a couple of new areas.
 
 ## Screenshots of finished project
 ### Sign up page
