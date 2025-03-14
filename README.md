@@ -4,10 +4,10 @@ A coding challenge by Pure Pet Food, where I had to build a React SPA with two m
 
 ## Screenshots of finished project
 ### Sign up page
-![Image of the "sign up" page](https://willisdyson.co.uk/images/ppf-main.png)
+![Image of the "sign up" page](https://willisdyson.pages.dev/images/ppf-main.png)
 
 ### Chosen plan page
-![Image of the "chosen plan" page](https://willisdyson.co.uk/images/ppf-sub.png)
+![Image of the "chosen plan" page](https://willisdyson.pages.dev/images/ppf-sub.png)
 
 ## Decisions explained
 - **Middleware proxy usage**: After having lots of problems getting around the Cross-Origin Resource Sharing policy due to the use of a local API, I used the _http-proxy-middleware_ npm package to create a proxy for fetch requests to the API. 
